@@ -1,0 +1,96 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    grid-area: nav;
+    background-color: #970582;
+    height: 10vh;
+    width: 100vw;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+aside{
+    grid-area: aside;
+    background-color: ghostwhite;
+    height: 90vh;
+    width: 15vw;
+    color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+aside h2{
+    padding-bottom: 2rem;
+}
+
+.items-aside{
+    font-size: 1.1rem;
+    width: 8rem;
+    height: 2rem;
+    padding-top: 1rem;
+    text-align: start;
+    display: flex;
+}
+
+section{
+    grid-area: section;
+    background-color: gainsboro;
+    height: 90vh;
+    width: 85vw;
+    color: black;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+footer{
+    grid-area: footer;
+    background-color: #970582;
+    height: 10vh;
+    width: 100vw;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-areas:
+    "nav nav"
+    "aside section"
+    "footer footer";
+}
+
+.grid-products{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 10px;
+    margin: 10px;
+    column-gap: 110px;
+}
+
+.card-img-top {
+    height: 16rem;
+}
+
+.card {
+    height: 9rem;
+}
+
+h6{
+    text-align: center
+
+}
